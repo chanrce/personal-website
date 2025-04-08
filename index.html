@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel Chan | Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/vapor/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    #about {
+      padding-top: 180px;
+    }
+    .divider {
+      border-top: 2px solid rgba(255, 255, 255, 0.2);
+      margin: 3rem 0;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      margin-top: 2rem;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 12px;
+      width: 4px;
+      height: 100%;
+      background: rgba(255,255,255,0.2);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -28px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bs-info);
+      border: 2px solid white;
+    }
+    .timeline-item.student::before {
+      background: var(--bs-warning);
+    }
+    .timeline-item p {
+      margin-bottom: 0.5rem;
+    }
+    .resume-link {
+      margin-top: 1.5rem;
+    }
+    .about-pic {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rachel Chan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero Blurb -->
+  <section id="about" class="container text-center">
+    <h1 class="display-5">Rachel Chan</h1>
+    <p class="lead">
+      MS in Computer Science at Stevens Tech | Seeking Summer 2025 internship  
+      <br>
+      Passionate about building thoughtful tools at the intersection of software, data, and storytelling.
+    </p>
+  </section>
+  
+  
+
+  <div class="divider"></div>
+
+  <!-- About Me -->
+  <section class="container">
+    <h2 class="mb-4 text-center">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="rachel-headshot.jpg" alt="Rachel Chan" class="about-pic">
+      </div>
+      <div class="col-md-6">
+        <p>Hi, I'm Rachel! I'm currently based in NYC and I grew up in Northern New Jersey. I later studied Economics and Theatre at Boston College, a combination that helped me understand people, stories, and how to communicate ideas. </p>
+        <p>Post graduating, I worked in market research for a few years before making a big leap into tech. I'm now pursuing my Master’s in Computer Science at Stevens Institute of Technology in Hoboken, NJ. I'm especially interested in how software and data can improve healthcare, education, and even music. </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Experience -->
+  <section id="experience" class="container">
+    <h2 class="mb-4">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item student">
+        <h5>Stevens Institute of Technology <span class="text-muted">— M.S. Computer Science</span></h5>
+        <p>GPA: 4.0 (Fall 2024) | Courses: Java, Data Structures, Algorithms, Python</p>
+        <small class="text-muted">Sep 2024 – Present</small>
+      </div>
+  
+      <div class="timeline-item">
+        <h5>NielsenIQ <span class="text-muted">— Consumer Insights Analyst</span></h5>
+        <p>Transitioned to a high-stakes team focused on securing new clients through competitive RFP contracts, conducting follow-up analysis and custom data-driven insights to support targeted business pitches and contribute to client acquisition.</p>
+        <small class="text-muted">2022 – 2023</small>
+      </div>
+  
+      <div class="timeline-item">
+        <h5>Custom Foils Company <span class="text-muted">— Operations & Business Analyst</span></h5>
+        <p>Handled a variety of business tasks as needed; led cross-functional projects, including a VBA automation project analyzing customer data to identify top-selling products.</p>
+        <small class="text-muted">2021 – 2022</small>
+      </div>
+  
+      <div class="timeline-item">
+        <h5>Data Science Bootcamp <span class="text-muted">— Rutgers</span></h5>
+        <p>Completed a six-month bootcamp focused on Python, data analysis & visualization, and machine learning fundamentals.</p>
+        <small class="text-muted">2020 – 2021</small>
+      </div>
+  
+      <div class="timeline-item">
+        <h5>Million Reasons, Inc. <span class="text-muted">— Program Coordinator / Tutor</span></h5>
+        <p>Developed educational programming and tutored underserved students.</p>
+        <small class="text-muted">2020 – 2021</small>
+      </div>
+  
+      <div class="timeline-item student">
+        <h5>Boston College <span class="text-muted">— B.A. Economics & Theatre</span></h5>
+        <p>Double major with a deep dives into analysis, communication and storytelling.</p>
+        <small class="text-muted">2016 – 2020</small>
+      </div>
+    </div>
+  
+    <div class="text-center resume-link">
+      <a href="resume.pdf" class="btn btn-primary" target="_blank">View Full Resume</a>
+    </div>
+  </section>
+  
+
+  <div class="divider"></div>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-light">
+          <div class="card-body">
+            <h5 class="card-title">Central Park Squirrel Census</h5>
+            <p class="card-text">Analyzed squirrel behavior and demographics using Python and pandas.</p>
+            <a href="https://github.com/WilliamRoll/Central-Park-Squirrel-Census" class="btn btn-outline-info" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-light">
+          <div class="card-body">
+            <h5 class="card-title">Food Deserts Analysis</h5>
+            <p class="card-text">Identified and visualized food-insecure regions in the U.S. using Python.</p>
+            <a href="https://github.com/Ssimoes48/Food-Deserts-Analysis" class="btn btn-outline-info" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-light">
+          <div class="card-body">
+            <h5 class="card-title">Telecom Price Prediction</h5>
+            <p class="card-text">Developed a machine learning model to help customers anticipate pricing.</p>
+            <a href="https://github.com/Starcode897/final-project-TELECOM" class="btn btn-outline-info" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Contact -->
+  <section id="contact" class="container text-center">
+    <h2 class="mb-4">Contact</h2>
+    <p>Let’s connect! Reach out via <a href="https://www.linkedin.com/in/rachelchane/" target="_blank">LinkedIn</a></p>
+    <a href="resume.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
